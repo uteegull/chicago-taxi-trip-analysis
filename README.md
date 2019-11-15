@@ -11,60 +11,60 @@ https://data.cityofchicago.org
 This dataset has about 185,666,648 instances and 23 attributes.
 - Trip Id
 - Taxi Id
-• Trip Start Timestamp
-• Trip End Timestamp
-• Trip Seconds
-• Trip Miles
-• Pickup Census Tract
-• Dropoff Census Tract
-• Pickup Community Area
-• Dropoff Community Area
-• Fare
-• Tips
-• Tolls
-• Extras
-• Trip Total
-• Payment Type
-• Company
-• Pickup Centroid Latitude
-• Pickup Centroid Longitude
-• Pickup Centroid Location
-• Dropoff Centroid Latitude
-• Dropoff Centroid Longitude
-• Dropoff Centroid Location
+- Trip Start Timestamp
+-  Trip End Timestamp
+-  Trip Seconds
+-  Trip Miles
+- Pickup Census Tract
+- Dropoff Census Tract
+- Pickup Community Area
+- Dropoff Community Area
+- Fare
+- Tips
+- Tolls
+- Extras
+- Trip Total
+- Payment Type
+- Company
+- Pickup Centroid Latitude
+- Pickup Centroid Longitude
+- Pickup Centroid Location
+- Dropoff Centroid Latitude
+- Dropoff Centroid Longitude
+- Dropoff Centroid Location
 
 # Problem Statement
 We mainly focused on this four problem statements
-• Categorizing number of trips and average mph of each hour of the day
-• Finding the total number of trips made in each year from 2013 to the present
-• Finding time elapses between rides.
-• Predicting the demand for taxis in Chicago
+- Categorizing number of trips and average mph of each hour of the day
+- Finding the total number of trips made in each year from 2013 to the present
+- Finding time elapses between rides.
+- Predicting the demand for taxis in Chicago
 
 # Implementation
 ## Categorizing number of trips and average mph of each hour of the day 
-▪ This Query was implemented using Hive in GCP my creating a cluster and assigning a job to it.
-▪ This will result in giving the total number of trips in each hour of the day
+- This Query was implemented using Hive in GCP my creating a cluster and assigning a job to it.
+- This will result in giving the total number of trips in each hour of the day
 with its average speed in mph.
-▪ Our result will have 3 columns – hour-of-day (which is extracted from
+- Our result will have 3 columns – hour-of-day (which is extracted from
 trip_start_timestamp), num-trips (total number of trips in each hour of the
 day), avg_mph ( average speed calculated in miles per hour.
 ## Finding the total number of trips made in each year from 2013 to the present.
-▪This query was implemented using Map-reduce programming
-▪ We can estimate the total number of trips made in a year and this will tell
+- This query was implemented using Map-reduce programming
+- We can estimate the total number of trips made in a year and this will tell
 us if taxi demand is increasing or decreasing over the years.
-▪ Our result will have 2 columns – year (the year of the trips) and num_trips
+- Our result will have 2 columns – year (the year of the trips) and num_trips
 (total number of trips in that year).
 ## Finding time elapses between rides.
-▪This query was implemented using Spark
-▪ This query will be to find the length of the break that the driver had before
+- This query was implemented using Spark
+-  This query will be to find the length of the break that the driver had before
 each trip started.
-▪ Our result will have 4 columns – taxi-id, trip_start_timestamp,
+- Our result will have 4 columns – taxi-id, trip_start_timestamp,
 trip_end_timestamp, break.
 ## Predicting the demand for taxis in Chicago
-▪This query was implemented using Big query in GCP.
-▪ We can predict the demand for taxis using number trips based on trip date,
+- This query was implemented using Big query in GCP.
+-  We can predict the demand for taxis using number trips based on trip date,
 time.
-▪ Our result will include 2 columns – trip_date (date of the trip) and
+-  Our result will include 2 columns – trip_date (date of the trip) and
 avg_num_trips(average number of trips on that day).
 
 ## Results
