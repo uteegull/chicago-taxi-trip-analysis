@@ -9,8 +9,8 @@ Dataset Source: City of Chicago
 This dataset is publicly available for anyone to use under the following terms provided by the Dataset Source
 https://data.cityofchicago.org
 This dataset has about 185,666,648 instances and 23 attributes.
-• Trip Id
-• Taxi Id
+- Trip Id
+- Taxi Id
 • Trip Start Timestamp
 • Trip End Timestamp
 • Trip Seconds
