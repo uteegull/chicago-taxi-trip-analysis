@@ -1,0 +1,2 @@
+Executing number of trips per year in BigQuery took 1.4sec whereas in MapReduce it took 32secs. 
+
