@@ -68,8 +68,8 @@ time.
 avg_num_trips(average number of trips on that day).
 
 ## Results
-##Number of trips per year
- ![alt test](visualizations/Number of trips per year(2).png)
+## Number of trips per year
+ ![alt text](Visualizations/Number of trips per year(2).png)
 ## Comparision
 We have performed Query 3 in both Map-reduce and Big Query. But for that query we have noticed that Big Query took less time when compared to Map-reduce job.
 
