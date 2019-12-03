@@ -32,6 +32,7 @@ This dataset has about 185,666,648 instances and 23 attributes.
 - Dropoff Centroid Latitude
 - Dropoff Centroid Longitude
 - Dropoff Centroid Location
+![](Visualizations/Dataset.png)
 
 # Problem Statement
 We mainly focused on this four problem statements
