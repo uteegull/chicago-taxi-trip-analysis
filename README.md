@@ -55,13 +55,16 @@ day), avg_mph ( average speed calculated in miles per hour.
 us if taxi demand is increasing or decreasing over the years.
 - Our result will have 2 columns – year (the year of the trips) and num_trips
 (total number of trips in that year).
+## Total number of miles and fare for a ride based on pickup location
+- This query was implemented in Spark
+- This query caluclates the total amount of fare and total miles travelled by a taxi driver in a particular area.
 ## Finding time elapses between rides.
-- This query was implemented using Spark
+- This query was implemented using BigQuery
 -  This query will be to find the length of the break that the driver had before
 each trip started.
 - Our result will have 4 columns – taxi-id, trip_start_timestamp,
 trip_end_timestamp, break.
-## Predicting the demand for taxis in Chicago
+## Analysing the demand for taxis in Chicago
 - This query was implemented using Big query in GCP.
 -  We can predict the demand for taxis using number trips based on trip date,
 time.
