@@ -1,0 +1,1 @@
+CREATE EXTERNAL TABLE q4(pickup_location STRING, fare FLOAT, trip_miles FLOAT)ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LOCATION 'gs://chicago-taxi-trips-group2/spark/data/';
