@@ -67,9 +67,11 @@ time.
 -  Our result will include 2 columns – trip_date (date of the trip) and
 avg_num_trips(average number of trips on that day).
 
-## Results
+# Results
 ## Number of trips per year
  ![](Visualizations/Number%20of%20trips%20per%20year%20(2).png)
+## Average miles per hour
+ ![]
 ## Comparision
 We have performed Query 3 in both Map-reduce and Big Query. But for that query we have noticed that Big Query took less time when compared to Map-reduce job.
 
