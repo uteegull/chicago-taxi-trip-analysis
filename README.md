@@ -79,6 +79,8 @@ avg_num_trips(average number of trips on that day).
  ![](Visualizations/Time%20Elapses.png)
 ## Comparision
 We have performed Query 3 in both Map-reduce and Big Query. But for that query we have noticed that Big Query took less time when compared to Map-reduce job.
-![](Comparing%20BigQuery-MapReduce/Capture1.PNG) ![](Comparing%20BigQuery-MapReduce/Capture2.PNG)
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](Comparing%20BigQuery-MapReduce/Capture1.PNG)  |  ![](Comparing%20BigQuery-MapReduce/Capture2.PNG)
 
 
